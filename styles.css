@@ -1,6 +1,7 @@
 .col-xs-1 {
-  border: solid black 1px;
+  border: solid darkgray 1px;
   height: 50px!important;
+  background-color: lightgrey!important;
 }
 
 .dungeon {
@@ -11,4 +12,12 @@
 .bloody {
   color: rgb(138,7,7);
   text-align: center;
+}
+
+.right-half, .left-half, .col-xs-1 {
+  padding: 0px!important;
+}
+
+#body-id {
+  background-color: black;
 }
