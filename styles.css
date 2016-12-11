@@ -1,5 +1,14 @@
 .body-id {
-  background-color: rgba(0,0,0,.7);
+  /*background-color: rgba(0,0,0,.7);*/
+  background-image: url('bone dungeon.jpg');
+}
+
+.header {
+  background-color: rgba(50,50,50,.8);
+  border: solid rgba(0,0,0, 1);
+  border-width: 5px 5px 5px 5px;
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .col-xs-1 {
@@ -16,7 +25,7 @@
 .left-half-two{
   border: solid rgba(0,0,0,.5);
   border-width: 10px 10px 10px 10px;
-  background-color: lightgrey;
+  background-color: rgba(150,150,150,.85);
   text-align: center;
 }
 
@@ -28,7 +37,7 @@
 .right-half-two {
   border: solid rgba(0,0,0,.5);
   border-width: 10px 10px 10px 10px;
-  background-color: lightgrey;
+  background-color: rgba(150,150,150,.85);
   text-align: center;
 }
 
@@ -78,7 +87,7 @@
 .action-text {
   height: 120px;
   margin-top: 10px;
-  background-color: lightgrey;
+  background-color: rgba(150,150,150,.85);
   border: solid rgba(0,0,0,.5);
   border-width: 10px 10px 10px 10px;
 }
