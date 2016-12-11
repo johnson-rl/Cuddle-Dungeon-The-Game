@@ -1,7 +1,41 @@
+.body-id {
+  background-color: rgba(0,0,0,.7);
+}
+
 .col-xs-1 {
   border: solid darkgray 1px;
   height: 50px!important;
-  background-color: lightgrey!important;
+  background-color: lightgrey;
+}
+
+.left-half {
+  border: solid rgba(0,0,0,.5);
+  border-width: 10px 0px 10px 10px;
+}
+
+.left-half-two{
+  border: solid rgba(0,0,0,.5);
+  border-width: 10px 10px 10px 10px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.right-half {
+  border: solid rgba(0,0,0,.5);
+  border-width: 10px 10px 10px 0px;
+}
+
+.right-half-two {
+  border: solid rgba(0,0,0,.5);
+  border-width: 10px 10px 10px 10px;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+.rock {
+  background-image: url('stone.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dungeon {
@@ -10,7 +44,7 @@
 }
 
 .bloody {
-  color: rgb(138,7,7);
+  color: rgb(158,7,7);
   text-align: center;
 }
 
@@ -18,6 +52,33 @@
   padding: 0px!important;
 }
 
-#body-id {
-  background-color: black;
+.hidden {
+  visibility: hidden!important;
+}
+
+.battle-name {
+  /*text-align: center;*/
+  text-decoration: underline;
+  /*margin-top: 0px;*/
+  display: inline-block;
+}
+
+.fighter{
+  padding: 10px;
+}
+
+.bottom-row {
+  margin: 10px;
+}
+
+.bottom-right-row {
+  margin-bottom: 64px;
+}
+
+.action-text {
+  height: 120px;
+  margin-top: 10px;
+  background-color: lightgrey;
+  border: solid rgba(0,0,0,.5);
+  border-width: 10px 10px 10px 10px;
 }
