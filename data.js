@@ -40,7 +40,7 @@ var enemies = {
     hp: 3,
     pow: 3,
     cuddle: 1,
-    icon: 'stone.png',
+    icon: 'bunny.gif',
     text: 'The bunny snuggles up to your chin...then bites your nose and face until it bleeds!'
   },
   koala: {
@@ -49,7 +49,7 @@ var enemies = {
     hp: 5,
     pow: 2,
     cuddle: 1,
-    icon: 'stone.png',
+    icon: 'koala.gif',
     text: 'The koala slowly chews some delicious eucalyptus...the spits it in your face while clawing your nether region!'
   },
   penguin: {
@@ -58,7 +58,7 @@ var enemies = {
     hp: 2,
     pow: 5,
     cuddle: 1,
-    icon: 'stone.png',
+    icon: 'penguin.gif',
     text: 'The penguin waddles around and smiles...then throws acid in your eyes and kicks your kneecap!'
   },
   sloth: {
@@ -67,7 +67,7 @@ var enemies = {
     hp: 10,
     pow: 1,
     cuddle: 1,
-    icon: 'stone.png',
+    icon: 'sloth.gif',
     text: 'The sloth slowly...slowly...slowly walks over to you...and chews your feet off at the ankles!'
   },
   panda: {
@@ -76,7 +76,7 @@ var enemies = {
     hp: 6,
     pow: 5,
     cuddle: 10,
-    icon: 'stone.png',
+    icon: 'panda2.gif',
     text: "The panda looks at you with eyes as deep as the ocean....and then mauls your face off!"
   }
 }
@@ -102,7 +102,59 @@ levelOneData = {
   13 : 'rock',
   23 : 'rock',
   24 : 'rock',
-  09 : 'move win'
+  09 : 'move win',
+  32 : 'rock',
+  33 : 'rock',
+  43 : 'rock',
+  53 : 'rock',
+  63 : 'rock',
+  07 : 'rock',
+  17 : 'rock',
+  27 : 'rock',
+  37 : 'rock',
+  46 : 'rock',
+  56 : 'rock',
+  66 : 'rock',
+  76 : 'rock',
+  85 : 'rock',
+  95 : 'rock',
+  94 : 'rock',
+  93 : 'rock',
+  92 : 'rock',
+  88 : 'rock',
+  89 : 'rock',
+  98 : 'rock',
+  99 : 'rock',
+  120 : 'rock',
+  121 : 'rock',
+  122 : 'rock',
+  106 : 'rock',
+  116 : 'rock',
+  126 : 'rock',
+  136 : 'rock',
+  135 : 'rock',
+  144 : 'rock',
+  146 : 'rock',
+  153 : 'rock',
+  156 : 'rock',
+  162 : 'rock',
+  166 : 'rock',
+  171 : 'rock',
+  175 : 'rock',
+  176 : 'rock',
+  181 : 'rock',
+  184 : 'rock',
+  185 : 'rock',
+  186 : 'rock',
+  191 : 'rock',
+  201 : 'rock',
+  211 : 'rock',
+  214 : 'rock',
+  215 : 'rock',
+  216 : 'rock',
+  217 : 'rock',
+  218 : 'rock',
+  219 : 'rock'
 }
 
 var battleText = [
