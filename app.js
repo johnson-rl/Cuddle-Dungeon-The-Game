@@ -1,7 +1,8 @@
 var hero = {
   position: [0,0],
-  HP: 10,
-  pow: 10,
+  hp: 10,
+  pow: 5,
+  cuddle: 2,
   icon: 'src="cat_walk_new.gif"',
   placeHero: function (){
       placementClass = '.'+this.position.join('')
@@ -10,6 +11,8 @@ var hero = {
       $(placementClass).append('<img id="hero" '+hero.icon+'></img>')
     }
 }
+
+var badGuy
 
 function doNothing(){}
 
@@ -24,7 +27,7 @@ function columnPlacer(col, nothing, side){
 }
 
 function placeObjects (colRow, board, nothing){
-  console.log(colRow);
+  // console.log(colRow);
   $('.'+colRow).addClass(board[Number(colRow)]);
   // debugger
 }
@@ -51,6 +54,74 @@ function boardIterator(data, functionOne, functionTwo){
     }
   }
 }
+
+function attack(event){
+  event.preventDefault()
+  badGuy.hp -= Math.round(Math.random()*hero.pow)
+  console.log(badGuy.hp)
+  battleEnemy()
+}
+
+function run(event){
+  event.preventDefault()
+  badGuy.hp -= Math.round(multi*hero.pow)
+  console.log(badGuy.hp)
+}
+
+function cuddle(event){
+  event.preventDefault()
+  badGuy.hp -= Math.round(multi*hero.pow)
+  console.log(badGuy.hp)
+}
+
+function special(event){
+  event.preventDefault()
+  badGuy.hp -= Math.round(multi*hero.pow)
+  console.log(badGuy.hp)
+}
+
+function heroWin(){
+  console.log("the hero won")
+}
+
+function enemyAttack(){
+  console.log("enemy attacked")
+}
+
+function enemyWin(){
+  console.log("the enemy won")
+}
+
+
+  function battleEnemy(evilDoer){
+    if(hero.hp<=0){
+      enemyWin()
+    } else {
+      console.log("Holy shit! It's an evil, but cute,"+evilDoer.name+"!");
+      // var action = Math.random()
+      if (badGuy.hp <=0){
+        heroWin()
+      } else {
+        enemyAttack()
+      }
+    }
+  }
+  function enemyGenerate(){
+    var enemy = Math.random();
+    if (enemy>=.95){
+      var type = Math.floor(Math.random()*enemyArray.length);
+      // console.log(enemyArray, type, enemyArray[type])
+      var enemyType = enemyArray[type];
+      var enemyCreate = enemies[enemyType]
+      console.log(enemyCreate)
+      alert("Holy sh@&*! You've encountered a cuddly but evil "+enemyArray[type]+"!");
+      $('#board').addClass('hidden');
+      $('#battle').removeClass('hidden');
+      badGuy = new Enemy(enemyCreate);
+      // console.log(badGuy);
+      battleEnemy(badGuy);
+    }
+  }
 
 //coordinates are [column, row]
 // function boardMaker(){
@@ -110,6 +181,12 @@ $(document).on('ready', function(){
       hero.position[1]-=1;
     }
     // console.log(hero.position)
+    enemyGenerate()
     hero.placeHero();
   })
+
+  $('#attack').on('click', attack)
+  $('#run').on('click', run)
+  $('#cuddle').on('click', cuddle)
+  $('#special').on('click', special)
 })

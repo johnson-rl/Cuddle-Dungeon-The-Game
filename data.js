@@ -27,10 +27,29 @@ function Level () {
 
 Level.prototype.buildLevel = function(builder, level){
   var keys = Object.keys(builder);
-console.log(keys)
+// console.log(keys)
   keys.forEach(function(key){
 level[key] = builder[key];
   })
+}
+
+var enemies = {
+  bunny: {name: 'bunny', level: 1, hp: 3, pow: 3, cuddle: 1, icon: 'stone.png'},
+  koala: {name: 'koala', level: 1, hp: 5, pow: 2, cuddle: 1, icon: 'stone.png'},
+  penguin: {name: 'penguin', level: 1, hp: 2, pow: 5, cuddle: 1, icon: 'stone.png'},
+  sloth: {name: 'sloth', level: 1, hp: 10, pow: 1, cuddle: 1, icon: 'stone.png'}
+}
+
+var enemyArray = Object.keys(enemies)
+
+function Enemy(baddy) {
+  console.log(baddy)
+  this.level = baddy.level;
+  console.log(baddy.level);
+  this.hp = baddy.hp;
+  this.pow = baddy.pow;
+  this.name = baddy.name;
+  this.cuddle = baddy.cuddle;
 }
 
 levelOneData = {
