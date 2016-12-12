@@ -23,10 +23,6 @@ var enemyBars
 
 function doNothing(){}
 
-function endGame(){
-  alert('winner winner, chicken dinner')
-}
-
 function rowPlacer(row, nothing, side){
   var rowPlacer = ('<div class="row '+row+'"></div>');
   side.append(rowPlacer);
@@ -75,6 +71,30 @@ function returnBoard(text){
 function startGame(){
   $('.prologue').addClass('hidden');
   $('#board').removeClass('hidden');
+}
+
+function endGame(){
+  $('#board').addClass('hidden');
+  $('.you-won').removeClass('hidden');
+    $('#first1').fadeIn(3000, function(){
+      $('#second1').fadeIn(3000, function(){
+        $('#third1').fadeIn(3000, function(){
+          $('#fourth1').fadeIn(3000, function(){
+            $('#fifth1').fadeIn(3000, function(){
+              $('#sixth1').fadeIn(3000, function(){
+                $('#seventh1').fadeIn(3000, function(){
+                  $('#eigth1').fadeIn(3000, function(){
+                    $('#ninth1').fadeIn(6000, function(){
+                      $('#tenth1').fadeIn(1000)
+                    })
+                  })
+                })
+              })
+            })
+          })
+        })
+      })
+    })
 }
 
 function attack(event){

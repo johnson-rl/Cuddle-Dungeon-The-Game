@@ -1,4 +1,4 @@
-.prologue {
+.prologue, .you-won {
   color: white!important;
   text-align: center;
 }
@@ -11,12 +11,16 @@
   padding: 100px
 }
 
-#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eigth, #ninth, #tenth {
+#first, #second, #third, #fourth, #fifth, #sixth, #seventh, #eigth, #ninth, #tenth, #first1, #second1, #third1, #fourth1, #fifth1, #sixth1, #seventh1, #eigth1, #ninth1, #tenth1 {
   display: none;
 }
 
-#tenth {
+#tenth, #eigth1 {
   color: rgb(158,7,7);
+}
+
+.ninth1 {
+  margin-top: 40px;
 }
 
 .body-id {
