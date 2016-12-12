@@ -34,10 +34,51 @@ level[key] = builder[key];
 }
 
 var enemies = {
-  bunny: {name: 'bunny', level: 1, hp: 3, pow: 3, cuddle: 1, icon: 'stone.png'},
-  koala: {name: 'koala', level: 1, hp: 5, pow: 2, cuddle: 1, icon: 'stone.png'},
-  penguin: {name: 'penguin', level: 1, hp: 2, pow: 5, cuddle: 1, icon: 'stone.png'},
-  sloth: {name: 'sloth', level: 1, hp: 10, pow: 1, cuddle: 1, icon: 'stone.png'}
+  bunny: {
+    name: 'bunny',
+    level: 1,
+    hp: 3,
+    pow: 3,
+    cuddle: 1,
+    icon: 'stone.png',
+    text: 'The bunny snuggles up to your chin...then bites your nose and face until it bleeds!'
+  },
+  koala: {
+    name: 'koala',
+    level: 1,
+    hp: 5,
+    pow: 2,
+    cuddle: 1,
+    icon: 'stone.png',
+    text: 'The koala slowly chews some delicious eucalyptus...the spits it in your face while clawing your nether region!'
+  },
+  penguin: {
+    name: 'penguin',
+    level: 1,
+    hp: 2,
+    pow: 5,
+    cuddle: 1,
+    icon: 'stone.png',
+    text: 'The penguin waddles around and smiles...then throws acid in your eyes and kicks your kneecap!'
+  },
+  sloth: {
+    name: 'sloth',
+    level: 1,
+    hp: 10,
+    pow: 1,
+    cuddle: 1,
+    icon: 'stone.png',
+    text: 'The sloth slowly...slowly...slowly walks over to you...and chews your feet off at the ankles!'
+  },
+  panda: {
+    name: 'panda',
+    level: 1,
+    hp: 6,
+    pow: 5,
+    cuddle: 10,
+    icon: 'stone.png',
+    text: "The panda looks at you with eyes as deep as the ocean....and then mauls your face off!"
+  }
 }
 
 var enemyArray = Object.keys(enemies)
@@ -50,6 +91,8 @@ function Enemy(baddy) {
   this.pow = baddy.pow;
   this.name = baddy.name;
   this.cuddle = baddy.cuddle;
+  this.icon = baddy.icon
+  this.text = baddy.text
 }
 
 levelOneData = {
@@ -58,10 +101,23 @@ levelOneData = {
   12 : 'rock',
   13 : 'rock',
   23 : 'rock',
-  24 : 'rock'
+  24 : 'rock',
+  09 : 'move win'
 }
 
+var battleText = [
+  'You rear back and deliver a fierce ninja kick to the head of the adorable beast.',
+  'You saved your precious tail and ran away....wuss',
+  'You failed to run away',
+  "You slyly approach the enemy, and cuddle the bejesus out of it.  You stole it's cuddle points!",
+  "You slyly approach the enemy.  The cute little bugger laughs and punches your stupid face.  No cuddle points stolen",
+  'You focus all of your energy...and fail.  Only well cuddled ninjas can use a special attack.',
+  "You focus all of your energy...and release a flurry of ninja punches on the enemy's adorable little nose.",
+  'You defeated the enemy and left it in a bloody cuddly heap!',
+  {
 
+  }
+]
 
 //Here is the boardIterator for reference purposes.
 // function boardIterator(data, functionOne, functionTwo){

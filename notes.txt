@@ -1,0 +1,34 @@
+function Level () {
+   this[00] = "move";  this[01] = "move";  this[02] = "move";  this[03] = "move";  this[04] = "move";  this[05] = "move";  this[06] = "move";  this[07] = "move";  this[08] = "move";  this[09] = "move";
+   this[10] = "move";  this[11] = "move";  this[12] = "move";  this[13] = "move";  this[14] = "move";  this[15] = "move";  this[16] = "move";  this[17] = "move";  this[18] = "move";  this[19] = "move";
+   this[20] = "move";  this[21] = "move";  this[22] = "move";  this[23] = "move";  this[24] = "move";  this[25] = "move";  this[26] = "move";  this[27] = "move";  this[28] = "move";  this[29] = "move";
+   this[30] = "move";  this[31] = "move";  this[32] = "move";  this[33] = "move";  this[34] = "move";  this[35] = "move";  this[36] = "move";  this[37] = "move";  this[38] = "move";  this[39] = "move";
+   this[40] = "move";  this[41] = "move";  this[42] = "move";  this[43] = "move";  this[44] = "move";  this[45] = "move";  this[46] = "move";  this[47] = "move";  this[48] = "move";  this[49] = "move";
+   this[50] = "move";  this[51] = "move";  this[52] = "move";  this[53] = "move";  this[54] = "move";  this[55] = "move";  this[56] = "move";  this[57] = "move";  this[58] = "move";  this[59] = "move";
+   this[60] = "move";  this[61] = "move";  this[62] = "move";  this[63] = "move";  this[64] = "move";  this[65] = "move";  this[66] = "move";  this[67] = "move";  this[68] = "move";  this[69] = "move";
+   this[70] = "move";  this[71] = "move";  this[72] = "move";  this[73] = "move";  this[74] = "move";  this[75] = "move";  this[76] = "move";  this[77] = "move";  this[78] = "move";  this[79] = "move";
+   this[80] = "move";  this[81] = "move";  this[82] = "move";  this[83] = "move";  this[84] = "move";  this[85] = "move";  this[86] = "move";  this[87] = "move";  this[88] = "move";  this[89] = "move";
+   this[90] = "move";  this[91] = "move";  this[92] = "move";  this[93] = "move";  this[94] = "move";  this[95] = "move";  this[96] = "move";  this[97] = "move";  this[98] = "move";  this[99] = "move";
+  this[100] = "move"; this[101] = "move"; this[102] = "move"; this[103] = "move"; this[104] = "move"; this[105] = "move"; this[106] = "move"; this[107] = "move"; this[108] = "move"; this[109] = "move";
+  this[110] = "move"; this[111] = "move"; this[112] = "move"; this[113] = "move"; this[114] = "move"; this[115] = "move"; this[116] = "move"; this[117] = "move"; this[118] = "move"; this[119] = "move";
+  this[120] = "move"; this[121] = "move"; this[122] = "move"; this[123] = "move"; this[124] = "move"; this[125] = "move"; this[126] = "move"; this[127] = "move"; this[128] = "move"; this[129] = "move";
+  this[130] = "move"; this[131] = "move"; this[132] = "move"; this[133] = "move"; this[134] = "move"; this[135] = "move"; this[136] = "move"; this[137] = "move"; this[138] = "move"; this[139] = "move";
+  this[140] = "move"; this[141] = "move"; this[142] = "move"; this[143] = "move"; this[144] = "move"; this[145] = "move"; this[146] = "move"; this[147] = "move"; this[148] = "move"; this[149] = "move";
+  this[150] = "move"; this[151] = "move"; this[152] = "move"; this[153] = "move"; this[154] = "move"; this[155] = "move"; this[156] = "move"; this[157] = "move"; this[158] = "move"; this[159] = "move";
+  this[160] = "move"; this[161] = "move"; this[162] = "move"; this[163] = "move"; this[164] = "move"; this[165] = "move"; this[166] = "move"; this[167] = "move"; this[168] = "move"; this[169] = "move";
+  this[170] = "move"; this[171] = "move"; this[172] = "move"; this[173] = "move"; this[174] = "move"; this[175] = "move"; this[176] = "move"; this[177] = "move"; this[178] = "move"; this[179] = "move";
+  this[180] = "move"; this[181] = "move"; this[182] = "move"; this[183] = "move"; this[184] = "move"; this[185] = "move"; this[186] = "move"; this[187] = "move"; this[188] = "move"; this[189] = "move";
+  this[190] = "move"; this[191] = "move"; this[192] = "move"; this[193] = "move"; this[194] = "move"; this[195] = "move"; this[196] = "move"; this[197] = "move"; this[198] = "move"; this[199] = "move";
+  this[200] = "move"; this[201] = "move"; this[202] = "move"; this[203] = "move"; this[204] = "move"; this[205] = "move"; this[206] = "move"; this[207] = "move"; this[208] = "move"; this[209] = "move";
+  this[210] = "move"; this[211] = "move"; this[212] = "move"; this[213] = "move"; this[214] = "move"; this[215] = "move"; this[216] = "move"; this[217] = "move"; this[218] = "move"; this[219] = "move";
+  this[220] = "move"; this[221] = "move"; this[222] = "move"; this[223] = "move"; this[224] = "move"; this[225] = "move"; this[226] = "move"; this[227] = "move"; this[228] = "move"; this[229] = "move";
+  this[230] = "move"; this[231] = "move"; this[232] = "move"; this[233] = "move"; this[234] = "move"; this[235] = "move"; this[236] = "move"; this[237] = "move"; this[238] = "move"; this[239] = "move";
+}
+
+Level.prototype.buildLevel = function(builder, level){
+  var keys = Object.keys(builder);
+console.log(keys)
+  keys.forEach(function(key){
+level[key] = builder[key];
+  })
+}
