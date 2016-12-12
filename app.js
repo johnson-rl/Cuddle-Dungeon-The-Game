@@ -84,44 +84,44 @@ function heroWin(){
   console.log("the hero won")
 }
 
-function enemyAttack(){
-  console.log("enemy attacked")
-}
-
 function enemyWin(){
   console.log("the enemy won")
 }
 
+function enemyAttack(){
+  console.log("enemy attacked")
+}
 
-  function battleEnemy(evilDoer){
-    if(hero.hp<=0){
-      enemyWin()
+function battleEnemy(evilDoer){
+  if(hero.hp<=0){
+    enemyWin()
+  } else {
+    // console.log("Holy shit! It's an evil, but cute,"+evilDoer.name+"!");
+    // var action = Math.random()
+    if (badGuy.hp <=0){
+      heroWin()
     } else {
-      console.log("Holy shit! It's an evil, but cute,"+evilDoer.name+"!");
-      // var action = Math.random()
-      if (badGuy.hp <=0){
-        heroWin()
-      } else {
-        enemyAttack()
-      }
+      enemyAttack()
     }
   }
-  function enemyGenerate(){
-    var enemy = Math.random();
-    if (enemy>=.95){
-      var type = Math.floor(Math.random()*enemyArray.length);
-      // console.log(enemyArray, type, enemyArray[type])
-      var enemyType = enemyArray[type];
-      var enemyCreate = enemies[enemyType]
-      console.log(enemyCreate)
-      alert("Holy sh@&*! You've encountered a cuddly but evil "+enemyArray[type]+"!");
-      $('#board').addClass('hidden');
-      $('#battle').removeClass('hidden');
-      badGuy = new Enemy(enemyCreate);
-      // console.log(badGuy);
-      battleEnemy(badGuy);
-    }
+}
+
+function enemyGenerate(){
+  var enemy = Math.random();
+  if (enemy>=.95){
+    var type = Math.floor(Math.random()*enemyArray.length);
+    // console.log(enemyArray, type, enemyArray[type])
+    var enemyType = enemyArray[type];
+    var enemyCreate = enemies[enemyType]
+    console.log(enemyCreate)
+    alert("Holy sh@&*! You've encountered a cuddly but evil "+enemyArray[type]+"!");
+    $('#board').addClass('hidden');
+    $('#battle').removeClass('hidden');
+    badGuy = new Enemy(enemyCreate);
+    // console.log(badGuy);
+    // battleEnemy(badGuy);
   }
+}
 
 //coordinates are [column, row]
 // function boardMaker(){
