@@ -22,7 +22,7 @@ var heroBars
 var enemyBars
 
 function doNothing(){}
-
+//The following functions create the gameboard and place the pieces
 function rowPlacer(row, nothing, side){
   var rowPlacer = ('<div class="row '+row+'"></div>');
   side.append(rowPlacer);
@@ -34,9 +34,7 @@ function columnPlacer(col, nothing, side){
 }
 
 function placeObjects (colRow, board, nothing){
-  // console.log(colRow);
   $('.'+colRow).addClass(board[Number(colRow)]);
-  // debugger
 }
 
 function boardIterator(data, functionOne, functionTwo){
@@ -61,7 +59,7 @@ function boardIterator(data, functionOne, functionTwo){
     }
   }
 }
-
+//The following functions alter what the viewer can see on the screen
 function returnBoard(text){
   alert(battleText[text])
   $('#battle').addClass('hidden');
@@ -96,7 +94,7 @@ function endGame(){
       })
     })
 }
-
+//The following function affect battle mechanics
 function attack(event){
   $('.action-text').html('');
   var damage = Math.round(Math.random()*hero.pow)
@@ -172,7 +170,6 @@ function enemyGenerate(){
   var enemy = Math.random();
   if (enemy>=.95){
     var type = Math.floor(Math.random()*enemyArray.length);
-    // console.log(enemyArray, type, enemyArray[type])
     var enemyType = enemyArray[type];
     var enemyCreate = enemies[enemyType]
     console.log(enemyCreate)
@@ -182,8 +179,6 @@ function enemyGenerate(){
     badGuy = new Enemy(enemyCreate);
     printBattleStats()
     $('.action-text').html('');
-    // console.log(badGuy);
-    // battleEnemy(badGuy);
   }
 }
 
@@ -203,7 +198,7 @@ function printBattleStats(){
   console.log(enemyAppend)
   $('#enemy-stats-placer').html(enemyAppend)
 }
-
+//The following begins the game and sets up the click events.
 $(document).on('ready', function(){
   // boardMaker()
   $('#start').on('click', function(){
