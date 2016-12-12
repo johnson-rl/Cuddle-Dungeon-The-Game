@@ -45,7 +45,9 @@ function boardIterator(data, functionOne, functionTwo){
 
 ##What's Next for Cuddle Dungeon?
 
-<li> Make new levels! </li>
+<li> Add a "How to Play" Section </li>
+<li> Let player choose class, with differing special abilities.  Enable XP, and leveling up. </li>
+<li> Generate enemies with higher levels </li>
 <li> Adjust the way the board renders to allow bigger (essentially infinite) gameboards </li>
 <li> Add sound </li>
 <li> Release Cuddle Dungeon 2: Ninja Kitty's Revenge </li>
