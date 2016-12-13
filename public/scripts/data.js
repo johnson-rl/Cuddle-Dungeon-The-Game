@@ -40,7 +40,7 @@ var enemies = {
     hp: 3,
     pow: 3,
     cuddle: 1,
-    icon: 'bunny.gif',
+    icon: 'public/images/bunny.gif',
     text: 'The bunny snuggles up to your chin...then bites your nose and face until it bleeds!'
   },
   koala: {
@@ -49,7 +49,7 @@ var enemies = {
     hp: 5,
     pow: 2,
     cuddle: 1,
-    icon: 'koala.gif',
+    icon: 'public/images/koala.gif',
     text: 'The koala slowly chews some delicious eucalyptus...the spits it in your face while clawing your nether region!'
   },
   penguin: {
@@ -58,7 +58,7 @@ var enemies = {
     hp: 2,
     pow: 5,
     cuddle: 1,
-    icon: 'penguin.gif',
+    icon: 'public/images/penguin.gif',
     text: 'The penguin waddles around and smiles...then throws acid in your eyes and kicks your kneecap!'
   },
   sloth: {
@@ -67,7 +67,7 @@ var enemies = {
     hp: 10,
     pow: 1,
     cuddle: 1,
-    icon: 'sloth.gif',
+    icon: 'public/images/sloth.gif',
     text: 'The sloth slowly...slowly...slowly walks over to you...and chews your feet off at the ankles!'
   },
   panda: {
@@ -76,7 +76,7 @@ var enemies = {
     hp: 6,
     pow: 5,
     cuddle: 10,
-    icon: 'panda2.gif',
+    icon: 'public/images/panda2.gif',
     text: "The panda looks at you with eyes as deep as the ocean....and then mauls your face off!"
   }
 }

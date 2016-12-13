@@ -4,7 +4,7 @@ var hero = {
   pow: 5,
   cuddle: 2,
   level: 1,
-  icon: 'src="cat_walk_new.gif"',
+  icon: 'src="public/images/cat_walk_new.gif"',
   placeHero: function (){
       placementClass = '.'+this.position.join('')
       // console.log(placementClass)
