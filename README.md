@@ -1,10 +1,10 @@
-# Cuddle-Dungeon-The-Game - [Play it Here](http://cuddledungeon.bitballoon.com/)
+# Cuddle-Dungeon-The-Game - [Play it Here](https://cuddle-dungeon.herokuapp.com/)
 
 ### Screen Shots
 [Dungeon View](https://i.imgur.com/FDdo62s.png)
 [Battle View](https://i.imgur.com/Nn6NYeH.jpg)
 
-##Technologies Used
+## Technologies Used
 
 <li> JavaScript </li>
 <li> jQuery </li>
@@ -43,7 +43,7 @@ function boardIterator(data, functionOne, functionTwo){
 }
 ```
 
-##What's Next for Cuddle Dungeon?
+## What's Next for Cuddle Dungeon?
 
 <li> Add a "How to Play" Section </li>
 <li> Let player choose class, with differing special abilities.  Enable XP, and leveling up. </li>
