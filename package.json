@@ -1,0 +1,22 @@
+{
+  "name": "cuddle-dungeon-the-game",
+  "version": "1.0.0",
+  "description": "### Screen Shots [Dungeon View](https://i.imgur.com/FDdo62s.png) [Battle View](https://i.imgur.com/Nn6NYeH.jpg)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnson-rl/Cuddle-Dungeon-The-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnson-rl/Cuddle-Dungeon-The-Game/issues"
+  },
+  "homepage": "https://github.com/johnson-rl/Cuddle-Dungeon-The-Game#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

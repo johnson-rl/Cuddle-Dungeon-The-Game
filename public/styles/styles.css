@@ -24,14 +24,14 @@
 }
 
 .win {
-  background-image: url('public/images/exit.png');
+  background-image: url('../images/exit.png');
   background-size: 50px 50px;
 
 }
 
 .body-id {
   /*background-color: rgba(0,0,0,.7);*/
-  background-image: url('public/images/bone dungeon.jpg');
+  background-image: url('../images/bone dungeon.jpg');
 }
 
 .header {
@@ -73,7 +73,7 @@
 }
 
 .rock {
-  background-image: url('public/images/stone.png');
+  background-image: url('../images/stone.png');
   background-repeat: no-repeat;
   background-position: center;
 }
