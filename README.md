@@ -1,4 +1,4 @@
-# Cuddle-Dungeon-The-Game - [Play it Here](http://cuddledungeon.bitballoon.com/)
+# Cuddle-Dungeon-The-Game - [Play it Here](https://cuddle-dungeon.herokuapp.com/)
 
 ### Screen Shots
 [Dungeon View](https://i.imgur.com/FDdo62s.png)
